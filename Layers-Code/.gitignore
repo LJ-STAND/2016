@@ -1,0 +1,9 @@
+*.DS_Store
+*/.pioenvs
+*/.clang_complete
+*/.gcc-flags.json
+/Processing/Layers/application.macosx
+<<<<<<< HEAD
+/Processing/Layers/application
+=======
+>>>>>>> master

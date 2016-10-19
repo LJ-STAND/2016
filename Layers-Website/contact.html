@@ -1,0 +1,72 @@
+<html>
+    <head profile="http://www.w3.org/2005/10/profile">
+        <title>Layers | Contact</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+        <link rel="icon" type="image/png" href="resources/images/favicon.ico">
+        <script type="text/javascript" src="scripts/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="navbar">
+                <div class="navbar-button" onclick="window.location.href = 'index.html'">
+                    <div class="navbar-button-text-container">
+                        <p class="navbar-button-text">HOME</p>
+                    </div>
+                </div>
+
+                <div class="navbar-button" onclick="window.location.href = 'news.html'">
+                    <div class="navbar-button-text-container">
+                        <p class="navbar-button-text">NEWS</p>
+                    </div>
+                </div>
+
+                <div class="navbar-button" onclick="window.location.href = 'contact.html'">
+                    <div class="navbar-button-text-container">
+                        <p class="navbar-button-text">CONTACT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="title-container">
+                <p id="title-text">Layers</p>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="content-heading-text-container">
+                <p id="content-heading-text" class="shadowed">Contact</p>
+            </div>
+
+            <div class="content-section" ng-controller="contactController" id="content-section-contact">
+                <form id="contact-form" name="contact-form" method="post" action="" ng-hide="hideForm == true">
+        			<div class="contact-form-element">
+        				<input ng-model="formData.name" class="contact-form-element-input" placeholder="Name" type="text" name="name" size="50"/>
+        			</div>
+
+        			<div class="contact-form-element">
+        				<input ng-model="formData.email" class="contact-form-element-input" placeholder="Email" type="text" name="email" size="50"/>
+        			</div>
+
+        			<div class="contact-form-element">
+        				<input ng-model="formData.subject" class="contact-form-element-input" placeholder="Subject" type="text" name="subject" size="50"/>
+        			</div>
+
+        			<div class="contact-form-element">
+        				<textarea ng-model="formData.message" class="contact-form-element-textarea" placeholder="Message" name="message" rows="10" cols="70"></textarea>
+        			</div>
+
+        			<div id="contact-form-submit-button-container" align="center">
+        				<a id="contact-form-submit-button" class="shadowed">Submit</a>
+        			</div>
+        		</form>
+            </div>
+        </div>
+
+        <div id="footer">
+            <a id="robotics-link" href="http://bbcrobotics.org">bbcrobotics.org</a>
+            <p id="credits-text">Website by James Yelland &amp; Lachlan Grant</p>
+        </div>
+    </body>
+</html>

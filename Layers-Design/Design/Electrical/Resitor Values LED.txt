@@ -1,0 +1,13 @@
+15V:
+Resistance = (vcc - fv) / I
+= (14.8 - 2) / 0.016
+= 12.8 / 0.016
+= 820
+
+5V:
+= (5 - 2) / 0.016
+= 3 / 0.016
+= 220
+
+DC motor driver:
+http://www.digikey.com/product-detail/en/TB6549PG(O)/TB6549PGO-ND/1730048
